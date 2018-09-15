@@ -25,9 +25,9 @@ IntranetServerConfig.STATIC_URL = `${IntranetServerConfig.protocol}://${Intranet
 
 const CloudServerConfig = {
     protocol: 'https',
-    host: 'movie.qjm253.cn',
+    host: 'jx.qjm253.cn',
     port: 80,
-    sub_domain: '/movie',
+    sub_domain: '/api',
     static_domain: '/statics'
 };
 

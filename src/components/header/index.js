@@ -84,6 +84,15 @@ class Nav extends React.Component {
 
     render() {
         const {isMobile, selectedKey} = this.props;
+        /**
+         <MyItem key={LocalRouter.LITTLE_TOOL} onClick={() => {
+                this.dealOnMenuItemClick(LocalRouter.LITTLE_TOOL)
+            }}><Link to={LocalRouter.LITTLE_TOOL}>推荐</Link></MyItem>,
+         <MyItem key={LocalRouter.P2P_SHARE} onClick={() => {
+                this.dealOnMenuItemClick(LocalRouter.P2P_SHARE)
+            }}><Link to={LocalRouter.P2P_SHARE}>P2P</Link></MyItem>
+         * @type {*[]}
+         */
         const menuItems = [
             <MyItem key={LocalRouter.HOME} onClick={() => {
                 this.dealOnMenuItemClick(LocalRouter.HOME)
@@ -91,15 +100,10 @@ class Nav extends React.Component {
             <MyItem key={LocalRouter.VIDEO} onClick={() => {
                 this.dealOnMenuItemClick(LocalRouter.VIDEO)
             }}><Link to={LocalRouter.VIDEO}>影视</Link></MyItem>,
-            <MyItem key={LocalRouter.LITTLE_TOOL} onClick={() => {
-                this.dealOnMenuItemClick(LocalRouter.LITTLE_TOOL)
-            }}><Link to={LocalRouter.LITTLE_TOOL}>推荐</Link></MyItem>,
             <MyItem key={LocalRouter.UPLOAD} onClick={() => {
                 this.dealOnMenuItemClick(LocalRouter.UPLOAD)
             }}><Link to={LocalRouter.UPLOAD}>上传</Link></MyItem>,
-            <MyItem key={LocalRouter.P2P_SHARE} onClick={() => {
-                this.dealOnMenuItemClick(LocalRouter.P2P_SHARE)
-            }}><Link to={LocalRouter.P2P_SHARE}>P2P</Link></MyItem>
+
 
         ];
         let dropDownMenu = (
